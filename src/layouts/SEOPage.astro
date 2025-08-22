@@ -36,21 +36,6 @@ const jsonld = {
     <script type="application/ld+json">{JSON.stringify(jsonld)}</script>
   </head>
   <body class="min-h-screen antialiased">
-    <header class="px-4 py-4 border-b">
-      <div class="mx-auto max-w-screen-lg flex items-center justify-between">
-        <a href="/" class="font-bold">Site</a>
-        <nav class="text-sm">
-          <a href="/seo/mobile-first/" class="hover:underline">SEO Demo</a>
-        </nav>
-      </div>
-    </header>
-
-    <main class="mx-auto max-w-screen-xl">
-      <slot />
-    </main>
-
-    <footer class="px-4 py-8 border-t mt-14 text-sm text-gray-600">
-      <div class="mx-auto max-w-screen-lg">© {new Date().getFullYear()} — Fast Astro site</div>
-    </footer>
+    <slot />
   </body>
 </html>

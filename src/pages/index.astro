@@ -1,7 +1,15 @@
 ---
-import Base from "../layouts/Base.astro";
+import SEOPage from "../layouts/SEOPage.astro";
 ---
-
-<Base title="Home | Jamstack Template" description="Starter template for Jamstack + Astro + Tailwind">
-  <h1>Hello World</h1>
-</Base>
+<SEOPage
+  title="Home | Jamstack Template"
+  description="Starter template for Jamstack + Astro + Tailwind"
+  url="https://jamstack-template-1ic.pages.dev/"
+>
+  <main class="p-8 text-center">
+    <h1 class="text-3xl font-bold text-gray-900">Hello World</h1>
+    <p class="mt-4 text-lg text-gray-600">
+      This is your first mobile-first, SEO-ready Astro page.
+    </p>
+  </main>
+</SEOPage>
